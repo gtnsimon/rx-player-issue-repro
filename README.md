@@ -6,6 +6,10 @@ Install packages:
 yarn
 ```
 
+## Issue
+
+https://github.com/canalplus/rx-player/issues/960
+
 ## Branches
 
 /!\ Install packages when switching branches using:
