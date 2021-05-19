@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT3M6.4S"
+	maxSegmentDuration="PT5.0S"
+	minBufferTime="PT10.0S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<ServiceDescription id="0">
+	</ServiceDescription>
+	<Period id="0" start="PT0.0S">
+		<AdaptationSet id="0" contentType="audio" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true">
+			<Representation id="0" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="320000" audioSamplingRate="32000">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<BaseURL>stream.mp4</BaseURL>
+				<SegmentList timescale="1000000" duration="5000000" startNumber="1">
+					<Initialization range="0-761" />
+					<SegmentURL mediaRange="762-201881" indexRange="762-813" />
+					<SegmentURL mediaRange="201882-403001" indexRange="201882-201933" />
+					<SegmentURL mediaRange="403002-604121" indexRange="403002-403053" />
+					<SegmentURL mediaRange="604122-805241" indexRange="604122-604173" />
+					<SegmentURL mediaRange="805242-1006361" indexRange="805242-805293" />
+					<SegmentURL mediaRange="1006362-1207481" indexRange="1006362-1006413" />
+					<SegmentURL mediaRange="1207482-1408601" indexRange="1207482-1207533" />
+					<SegmentURL mediaRange="1408602-1609721" indexRange="1408602-1408653" />
+					<SegmentURL mediaRange="1609722-1810841" indexRange="1609722-1609773" />
+					<SegmentURL mediaRange="1810842-2011961" indexRange="1810842-1810893" />
+					<SegmentURL mediaRange="2011962-2213081" indexRange="2011962-2012013" />
+					<SegmentURL mediaRange="2213082-2414201" indexRange="2213082-2213133" />
+					<SegmentURL mediaRange="2414202-2615321" indexRange="2414202-2414253" />
+					<SegmentURL mediaRange="2615322-2816441" indexRange="2615322-2615373" />
+					<SegmentURL mediaRange="2816442-3017561" indexRange="2816442-2816493" />
+					<SegmentURL mediaRange="3017562-3218681" indexRange="3017562-3017613" />
+					<SegmentURL mediaRange="3218682-3419801" indexRange="3218682-3218733" />
+					<SegmentURL mediaRange="3419802-3620921" indexRange="3419802-3419853" />
+					<SegmentURL mediaRange="3620922-3822041" indexRange="3620922-3620973" />
+					<SegmentURL mediaRange="3822042-4023161" indexRange="3822042-3822093" />
+					<SegmentURL mediaRange="4023162-4224281" indexRange="4023162-4023213" />
+					<SegmentURL mediaRange="4224282-4425401" indexRange="4224282-4224333" />
+					<SegmentURL mediaRange="4425402-4626521" indexRange="4425402-4425453" />
+					<SegmentURL mediaRange="4626522-4827641" indexRange="4626522-4626573" />
+					<SegmentURL mediaRange="4827642-5028761" indexRange="4827642-4827693" />
+					<SegmentURL mediaRange="5028762-5229881" indexRange="5028762-5028813" />
+					<SegmentURL mediaRange="5229882-5431001" indexRange="5229882-5229933" />
+					<SegmentURL mediaRange="5431002-5632121" indexRange="5431002-5431053" />
+					<SegmentURL mediaRange="5632122-5833241" indexRange="5632122-5632173" />
+					<SegmentURL mediaRange="5833242-6034361" indexRange="5833242-5833293" />
+					<SegmentURL mediaRange="6034362-6235481" indexRange="6034362-6034413" />
+					<SegmentURL mediaRange="6235482-6436601" indexRange="6235482-6235533" />
+					<SegmentURL mediaRange="6436602-6637721" indexRange="6436602-6436653" />
+					<SegmentURL mediaRange="6637722-6838841" indexRange="6637722-6637773" />
+					<SegmentURL mediaRange="6838842-7039961" indexRange="6838842-6838893" />
+					<SegmentURL mediaRange="7039962-7241081" indexRange="7039962-7040013" />
+					<SegmentURL mediaRange="7241082-7442201" indexRange="7241082-7241133" />
+					<SegmentURL mediaRange="7442202-7465473" indexRange="7442202-7442253" />
+				</SegmentList>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>

@@ -1,0 +1,16 @@
+#mediaSelector {
+  margin-top: 12px;
+}
+
+#mediaPreview {
+  display: block;
+  width: 500px;
+
+  margin-top: 24px;
+
+  > audio,
+  > video {
+    display: block;
+    width: 100%;
+  }
+}
