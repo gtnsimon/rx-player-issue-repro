@@ -67,6 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // get media preview
   const mediaPreview = document.querySelector('#mediaPreview')
 
+  // display rx-player version
+  const rxVersion = document.querySelector('#rxVersion')
+  let rxVersionText = rxVersion.innerHTML + ' ' + RxPlayer.version
+
+  rxVersionText = rxVersionText + (RxPlayer.version === '3.24.0' ? ' (should be broken)' : ' (should work)')
+  rxVersion.innerHTML = rxVersionText
+
   // listen for media changes
   mediaSelector.addEventListener('change', (e) => {
     setMediaPreviewElement(mediaPreview, e.target.value)
