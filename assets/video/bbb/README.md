@@ -1,0 +1,5 @@
+http://bbb3d.renderfarming.net/download.html
+
+ffmpeg -ss 00:04:00 -t 00:01:00 -i inputs/bbb.mp4 -t 00:01:00 -c copy inputs/bbb1mn.mp4
+
+ffmpeg -y -hide_banner -vsync passthrough -hwaccel_device 0 -hwaccel cuda -hwaccel_output_format cuda -threads 8 -i ./inputs/bbb1mn.mp4 -stdin -map 0:v:0 -map 0:v:0 -map 0:v:0 -map 0:a:0? -filter:v:0 scale_npp=-2:360:interp_algo=super,setdar=dar=1.7777777777777777 -b:v:0 800k -maxrate:v:0 800k -bufsize:v:0 400k -filter:v:1 scale_npp=-2:480:interp_algo=super,setdar=dar=1.7777777777777777 -b:v:1 1500k -maxrate:v:1 1500k -bufsize:v:1 750k -filter:v:2 scale_npp=-2:720:interp_algo=super,setdar=dar=1.7777777777777777 -b:v:2 2500k -maxrate:v:2 2500k -bufsize:v:2 1250k -c:v h264_nvenc -preset slow -rc vbr -rc-lookahead:v 0 -movflags faststart -no-scenecut 1 -g 300 -keyint_min 300 -force_key_frames "expr:gte(t,n_forced*5)" -c:a libfdk_aac -ac 2 -b:a 192k -adaptation_sets "id=0,streams=v id=1,streams=a" -seg_duration 5 -use_timeline 0 -use_template 1 -hls_playlist 1 -single_file 1 -single_file_name stream_\$RepresentationID\$.\$ext\$ -f dash ./outputs/bbb/manifest.mpd

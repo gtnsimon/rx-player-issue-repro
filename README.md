@@ -20,12 +20,12 @@ yarn
 
 ### Branch `master`
 
-This branch is the WORKING example. Install packages to use rx-player 3.23.1:
+This branch is the WORKING example. Install packages to use rx-player 3.22.0:
 
 
 ### Branch `broken`
 
-This branch is the BROKEN example. Install packages to use rx-player 3.24.0:
+This branch is the BROKEN example. Install packages to use rx-player 3.26.0:
 
 
 ## Run project

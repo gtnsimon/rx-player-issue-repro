@@ -4,6 +4,8 @@ import './styles.scss'
 import RxPlayer from 'rx-player/minimal'
 import { DASH } from 'rx-player/features'
 
+RxPlayer.LogLevel = "DEBUG"
+
 // keep reference to rx-player element to dispose it later
 let oldRxPlayer
 
@@ -71,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const rxVersion = document.querySelector('#rxVersion')
   let rxVersionText = rxVersion.innerHTML + ' ' + RxPlayer.version
 
-  rxVersionText = rxVersionText + (RxPlayer.version === '3.24.0' ? ' (should be broken)' : ' (should work)')
+  rxVersionText = rxVersionText + (RxPlayer.version === '3.22.0' ? ' (should work)' : ' (should be broken ON SAFARI)')
   rxVersion.innerHTML = rxVersionText
 
   // listen for media changes

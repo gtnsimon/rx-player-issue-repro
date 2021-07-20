@@ -170,10 +170,10 @@ rollup@^2.38.5:
   optionalDependencies:
     fsevents "~2.3.1"
 
-rx-player@3.23.1:
-  version "3.23.1"
-  resolved "https://registry.yarnpkg.com/rx-player/-/rx-player-3.23.1.tgz#3c948d0dabd8f87385d4c1bbcad724baa0099fb9"
-  integrity sha512-t860jfgmWHB9pt3EYXyoqZw4Fupext802bBDCXd+vVRen0P5L70cruhpp23Fm25Z+Jka/bLmcoVoHwVePg4Xww==
+rx-player@3.22.0:
+  version "3.22.0"
+  resolved "https://registry.yarnpkg.com/rx-player/-/rx-player-3.22.0.tgz#be0047a2e5c6454792ff3bb4bccd34cbce8198bc"
+  integrity sha512-PjjFdkcIUQS6m6sSGwNZTqQ+8xwvN8RTpuEkOCFCorsXTX4zADXrm5TF7mHAsdcnq5/Hn9FzlWk2eHxVa/iaKQ==
   dependencies:
     next-tick "1.1.0"
     pinkie "2.0.4"
